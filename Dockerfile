@@ -17,6 +17,7 @@ RUN apk add -U --no-cache --virtual .build-deps \
     && apk del .build-deps
 
 COPY entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
 EXPOSE 8888
 VOLUME /ssdb/var
