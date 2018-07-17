@@ -2,7 +2,7 @@ FROM alpine:${ALPINE_VERSION:-3.7}
 
 LABEL maintainer="wzshiming@foxmail.com"
 
-ARG SSDB_VERSION=${VERSION:-1.9.0}
+ARG SSDB_VERSION=${VERSION:-1.9.2}
 
 RUN apk add -U --no-cache --virtual .build-deps \
       curl gcc g++ make autoconf libc-dev libevent-dev linux-headers perl tar \
